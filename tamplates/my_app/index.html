@@ -1,0 +1,52 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanvir Rifat</title>
+    <style>
+        table {
+            background-color: aquamarine;
+            width: 100%;
+            text-align: center;
+            color: blueviolet;
+            font-size: 30px;
+        }
+        
+        body {
+            background-color: brown;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Dept</th>
+        </tr>
+
+
+        {% for row in Student %}
+        <tr>
+            <td>{{ row.name }}</td>
+            <td> {{ row.age }} </td>
+            <td> {{ row.dept }}</td>
+
+
+
+        </tr>
+        {% endfor %}
+
+
+
+    </table>
+
+</body>
+
+</html>
